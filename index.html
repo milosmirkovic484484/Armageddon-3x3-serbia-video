@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en"><!--<![endif]-->
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <title>Armageddon 3x3 Serbia</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="title" content="ARMAGEDDON 3X3 SERBIA" />
+        <meta itemprop="name" content="ARMAGEDDON 3X3 SERBIA" />
+        <meta property="og:title" content="ARMAGEDDON 3X3 SERBIA" />
+        <meta name="description" content="ZVANIČNA WEB PREZENTACIJA ARMAGEDDON 3X3 SERBIA, SPORT 3x3 BASKET, ARMAGEDDON 3X3 SERBIA, ARMAGEDDON, BASKETBALL,Basket 3x3 Srbija" />
+        <meta itemprop="description" content="ZVANIČNA WEB PREZENTACIJA ARMAGEDDON 3X3 SERBIA, SPORT 3x3 BASKET, ARMAGEDDON 3X3 SERBIA, ARMAGEDDON, BASKETBALL, Basket 3x3 Srbija, SPORTSKA DEŠAVANJA, PROMOCIJA SPORTA" />
+        <meta id="meta-tag-description" property="og:description" content="ZVANIČNA WEB PREZENTACIJA ARMAGEDDON 3X3 SERBIA, SPORT 3x3 BASKET, ARMAGEDDON 3X3 SERBIA, ARMAGEDDON, BASKETBALL, Basket 3x3 Srbija, SPORTSKA DEŠAVANJA, PROMOCIJA SPORTA" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        
+        <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+        
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style1.css" />
+        <script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+       
+        
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+    
+       
+
+        <div class="toggle-btn">
+            <span class="one"></span>
+            <span class="two"></span>
+       </div>
+      
+       <div class="menu">
+            <div class="data">
+                 <ul>
+                      <li style="color: white;">Armageddon<strong style="color: red;">S</strong><strong style="color: blue;">R</strong><strong style="color: white;" >B</strong></li>
+                      <li><a href="index.html">-Početna</a></li>
+                      <li><a href="vesti.html">-Vesti</a></li>
+                      <li><a href="igraci.html">-Igrači</a></li>
+                     
+                      <li><a href="kontakt.html">-Kontakt</a></li>
+                      <li style="padding-left: 65px;"><a href="https://www.facebook.com/permalink.php?id=295550507824480&story_fbid=340853896627474">
+                          <img src="images/facebook.png">
+                      </a></li>
+                     
+                     
+                      
+                    
+                 </ul>
+            </div>
+       </div>
+
+
+       <div class="mp-video-container">
+  
+               <video poster="images/video/pobeda.mp4" id="mp-video" playsinline="" autoplay="" loop="" muted="">
+                
+                   <source src="images/video/pobeda.mp4" type="video/mp4">
+                
+               </video>
+              
+            </div>
+              
+            <div class="mp-overlay">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                
+               <h2 class="mp-desk1 animated fadeIn">ARMAGEDDON <input class="mp-input animated fadeIn" type="text" name="tshirts" placeholder="3x3"> SERBIA</h2>
+            
+               <a href="vesti.html" class="mpbtn mp-desk1  animated fadeIn" >Vesti</a>
+              
+              <h2 class="mp-mob1">ARMAGEDDON</h2>
+              <input class="mp-mob1" type="text" name="tshirts" placeholder="3x3">
+              <h2 class="mp-mob1">SERBIA</h2>
+            
+               <a href="vesti.html" class="mpbtn mp-mob1" >Vesti</a>
+                
+            </div>
+              
+       <script type="text/javascript">
+     
+        var t1 = new TimelineMax({paused: true});
+        
+        t1.to(".one", 0.8, {
+             y: 6,
+             rotation: 45,
+             ease: Expo.easeInOut
+        });
+        t1.to(".two", 0.8, {
+             y: -6,
+             rotation: -45,
+             ease: Expo.easeInOut,
+             delay: -0.8
+        });
+        
+        t1.to(".menu", 2, {
+             top: "0%",
+             ease: Expo.easeInOut,
+             delay: -2
+        });
+        
+        t1.staggerFrom(".menu ul li", 2, {x: -200, opacity: 0, ease:Expo.easeOut}, 0.3);
+        
+        t1.reverse();
+        $(document).on("click", ".toggle-btn", function() {
+             t1.reversed(!t1.reversed());
+        });
+        $(document).on("click", "a", function() {
+             t1.reversed(!t1.reversed());
+        });
+   
+        TweenMax.from(".runner", 2, {
+               delay: 0.5,
+               x: -80,
+               opacity: 0,
+               ease: Expo.easeInOut
+               });
+   
+               TweenMax.from(".runner1", 2, {
+               delay: 0.5,
+               x: -80,
+               opacity: 0,
+               ease: Expo.easeInOut
+               });
+   
+   
+               TweenMax.from(".cart", 2, {
+               delay: 1.7,
+               y: 20,
+               opacity: 0,
+               ease: Expo.easeInOut
+               });
+   
+               TweenMax.from(".box-1", 4, {
+               delay: 1,
+               rotation: 200,
+               transformOrigin: "50% 50%",
+               opacity: 0,
+               x: -180,
+               ease: Expo.easeInOut
+               });
+   
+              
+        </script>
+    </body>
+</html>
